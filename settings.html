@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Settings</title>
+        <link rel="shortcut icon" type="image/png" href="img/icon_16.png">
+        <link rel="stylesheet" href="settings.css">
+    </head>
+    <body>
+        <t class="titleText">Settings</t>
+        <div class="mainContainer">
+            <div class="scoreDiv mainCat">
+                <h2>Score</h2>
+                <t id='highScoreText'>Current High Score: 0</t>
+                <button id="resetHighscore">Reset Highscore</button>
+            </div>
+            <div class="colorsDiv mainCat">
+                <h2>Colors</h2>
+                <form id="colorForm" class="colorForm">
+                    <div>
+                        <label for="snakeColor">Snake Color</label>
+                        <input type="color" name="snakeColor" id="snakeColor" value="#000000">
+                    </div>
+                    <div>
+                        <label for="backgroundColor">Background Color</label>
+                        <input type="color" name="backgroundColor" id="backgroundColor" value="#000000">
+                    </div>
+                    <div>
+                        <label for="appleColor">Apple Color</label>
+                        <input type="color" name="appleColor" id="appleColor" value="#000000">
+                    </div>
+                    <div>
+                        <label for="navbarColor">Navbar Color</label>
+                        <input type="color" name="navbarColor" id="navbarColor" value="#000000">
+                    </div>
+                    <div>
+                        <label for="textColor">Navbar Text Color</label>
+                        <input type="color" name="textColor" id="textColor" value="#000000">
+                    </div>
+                </form>
+                <button id="colorFormButton">Set Colors</button>
+                <div class="switchContainer">
+                    <t>Chunky Mode</t>
+                    <label class="switch">
+                        <input type="checkbox" id="chunkyCheck" name="chunkyCheck">
+                        <span class="switchSlider"></span>
+                    </label>
+                </div>
+                <div class="switchContainer">
+                    <t>Settings Dark Mode</t>
+                    <label class="switch">
+                        <input type="checkbox" id="darkCheck" name="darkCheck">
+                        <span class="switchSlider"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="defaultsDiv mainCat">
+                <h2>Defaults</h2>
+                <button id="defaultsButton">Restore to Defaults</button>
+                <p>Warning: Restoring to defaults will delete all data across all installations of this extension including high scores.</p>
+            </div>
+            <div class="donationsDiv mainCat">
+                <h2>Donations</h2>
+                <p>Hey! Thank you so much for checking out my project! It really means a lot! If you'd like, consider donating!</p>
+                <a href="https://ko-fi.com/justcookiedough"><img src="img/ko-fi.png"></a>
+            </div>
+        </div>
+        <script src="settings.js"></script>
+    </body>
+</html>
